@@ -1,6 +1,19 @@
 $maxWidth: 1000px;
 $brandColor: #cd6799;
 
+@mixin btn($color) {
+  display: block;
+  padding: 20px 30px;
+  color: #fff;
+  border-radius: 6px;
+  cursor: pointer;
+  background-color: $color;
+  text: {
+    decoration: none;
+    align: center;
+  }
+}
+
 .inner {
   width: 100%;
   max-width: 1000px;
@@ -46,4 +59,26 @@ $brandColor: #cd6799;
       }
     }
   }
+}
+
+.footer {
+  padding: 70px;
+  &__sns {
+    &__list {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      & > li {
+        width: 32%;
+        &:nth-child(n + 4) {
+          margin-top: 20px;
+        }
+      }
+    }
+    &__btn {
+      &.is-facebook {
+        @include btn(#4668b3)
+      }
+    }
   }
+}
