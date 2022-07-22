@@ -1,4 +1,38 @@
-.hoge {
-  width: 100px;
-  height: 100px;
+@import './reset';
+@import './variable';
+
+.wrapper {
+  margin: 0 auto;
+  width: 400px;
 }
+
+.header {
+  background-color: $navy;
+  height: 100px;
+  position: relative;
+  &__menu {
+    background-color: $white;
+    display: flex;
+    align-items: center;
+    right: 20px;
+    padding: 10px;
+    position: absolute;
+    top: 20px;
+    &__item {
+      background-color: aqua; // 仮
+      height: 40px;
+      width: 40px;
+      margin-left: 10px;
+      &:first-child {
+        margin-left: 0;
+      }
+    }
+  }
+}
+@each $className in $classNames {
+  $index_key: index($classNames, $className);
+  .#{$className} {
+    background-color: nth($buttonColor, $index_key);
+  }
+}
+
