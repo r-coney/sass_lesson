@@ -1,0 +1,15 @@
+$maxWidth: 1000px;
+$brandColor: #cd6799;
+
+@mixin btn($color) {
+  display: block;
+  padding: 20px 30px;
+  color: #fff;
+  border-radius: 6px;
+  cursor: pointer;
+  background-color: $color;
+  text: {
+    decoration: none;
+    align: center;
+  }
+}
