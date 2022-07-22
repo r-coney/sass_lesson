@@ -110,6 +110,15 @@ input, select {
   height: 100px;
   position: relative;
 }
+.header-purple {
+  background-color: #a9004b;
+}
+.header-orange {
+  background-color: #ff863f;
+}
+.header-blue {
+  background-color: #0000ff;
+}
 .header__menu {
   background-color: #fff;
   display: flex;
@@ -128,21 +137,18 @@ input, select {
   margin-left: 0;
 }
 
-.purple {
-  background-color: #a9004b;
-}
-
-.orange {
-  background-color: #ff863f;
-}
-
-.blue {
-  background-color: #0000ff;
-}
-
 .main {
   display: flex;
   height: 250px;
+}
+.main-purple {
+  background-color: #a9004b;
+}
+.main-orange {
+  background-color: #ff863f;
+}
+.main-blue {
+  background-color: #0000ff;
 }
 .main__side-bar {
   background-color: #80bfa8;
@@ -166,4 +172,9 @@ input, select {
 }
 .main__content__block__item:first-child {
   margin-top: 0;
+}
+
+.footer {
+  background-color: #d98d30;
+  height: 100px;
 }

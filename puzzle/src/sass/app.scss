@@ -1,5 +1,6 @@
 @import './reset';
 @import './variable';
+@import './mixin';
 
 .wrapper {
   margin: 0 auto;
@@ -10,6 +11,7 @@
   background-color: $navy;
   height: 100px;
   position: relative;
+  @include item-color();
   &__menu {
     background-color: $white;
     display: flex;
@@ -28,16 +30,11 @@
     }
   }
 }
-@each $className in $classNames {
-  $index_key: index($classNames, $className);
-  .#{$className} {
-    background-color: nth($buttonColor, $index_key);
-  }
-}
 
 .main {
   display: flex;
   height: 250px;
+  @include item-color();
   &__side-bar {
     background-color: $green;
     width: 150px;
@@ -61,4 +58,9 @@
       }
     }
   }
+}
+
+.footer {
+  background-color: $brown;
+  height: 100px;
 }

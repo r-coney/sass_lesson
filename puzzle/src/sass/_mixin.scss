@@ -1,0 +1,8 @@
+@mixin item-color() {
+  @each $className in $classNames {
+    $index_key: index($classNames, $className);
+    &-#{$className} {
+      background-color: nth($buttonColor, $index_key);
+    }
+  }
+}
