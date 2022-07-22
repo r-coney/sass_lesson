@@ -120,12 +120,12 @@ input, select {
   background-color: #0000ff;
 }
 .header__menu {
+  align-items: center;
   background-color: #fff;
   display: flex;
-  align-items: center;
-  right: 20px;
   padding: 10px;
   position: absolute;
+  right: 20px;
   top: 20px;
 }
 .header__menu__item {

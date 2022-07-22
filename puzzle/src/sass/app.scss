@@ -13,12 +13,12 @@
   position: relative;
   @include item-color();
   &__menu {
+    align-items: center;
     background-color: $white;
     display: flex;
-    align-items: center;
-    right: 20px;
     padding: 10px;
     position: absolute;
+    right: 20px;
     top: 20px;
     &__item {
       height: 40px;
