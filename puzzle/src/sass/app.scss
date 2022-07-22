@@ -20,7 +20,7 @@
     position: absolute;
     right: 20px;
     top: 20px;
-    &__item {
+    &-item {
       height: 40px;
       width: 40px;
       margin-left: 10px;
@@ -43,11 +43,11 @@
     background-color: $red;
     position: relative;
     width: 250px;
-    &__block {
+    &-block {
       position: absolute;
       left: 40px;
       top: 40px;
-      &__item {
+      &-item {
         border: solid 5px $white;
         height: 40px;
         margin-top: 10px;

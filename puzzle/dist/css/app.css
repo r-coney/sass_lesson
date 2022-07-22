@@ -128,12 +128,12 @@ input, select {
   right: 20px;
   top: 20px;
 }
-.header__menu__item {
+.header__menu-item {
   height: 40px;
   width: 40px;
   margin-left: 10px;
 }
-.header__menu__item:first-child {
+.header__menu-item:first-child {
   margin-left: 0;
 }
 
@@ -159,18 +159,18 @@ input, select {
   position: relative;
   width: 250px;
 }
-.main__content__block {
+.main__content-block {
   position: absolute;
   left: 40px;
   top: 40px;
 }
-.main__content__block__item {
+.main__content-block-item {
   border: solid 5px #fff;
   height: 40px;
   margin-top: 10px;
   width: 140px;
 }
-.main__content__block__item:first-child {
+.main__content-block-item:first-child {
   margin-top: 0;
 }
 
