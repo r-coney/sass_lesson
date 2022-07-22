@@ -35,3 +35,30 @@
   }
 }
 
+.main {
+  display: flex;
+  height: 250px;
+  &__side-bar {
+    background-color: $green;
+    width: 150px;
+  }
+  &__content {
+    background-color: $red;
+    position: relative;
+    width: 250px;
+    &__block {
+      position: absolute;
+      left: 40px;
+      top: 40px;
+      &__item {
+        border: solid 5px $white;
+        height: 40px;
+        margin-top: 10px;
+        width: 140px;
+        &:first-child {
+          margin-top: 0;
+        }
+      }
+    }
+  }
+}

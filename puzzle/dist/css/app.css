@@ -139,3 +139,31 @@ input, select {
 .blue {
   background-color: #0000ff;
 }
+
+.main {
+  display: flex;
+  height: 250px;
+}
+.main__side-bar {
+  background-color: #80bfa8;
+  width: 150px;
+}
+.main__content {
+  background-color: #8c2727;
+  position: relative;
+  width: 250px;
+}
+.main__content__block {
+  position: absolute;
+  left: 40px;
+  top: 40px;
+}
+.main__content__block__item {
+  border: solid 5px #fff;
+  height: 40px;
+  margin-top: 10px;
+  width: 140px;
+}
+.main__content__block__item:first-child {
+  margin-top: 0;
+}
